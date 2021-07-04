@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ads Manager</title>
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main class="content">
+      <h1>Ads Manager</h1>
+
+      <a href="/">Add new Advertisement</a>
+
+      <input type="text" onkeyup="showAds(this.value)" placeholder="Filter by Client or Date" />
+      
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Client</th>
+            <th scope="col">Start</th>
+            <th scope="col">End</th>
+            <th scope="col">Investment Per Day</th>
+            <th scope="col">Report</th>
+          </tr>
+        </thead>
+        <tbody id="adsManager"></tbody>
+      </table>
+
+      <div class="botoes">
+        <button onclick="showAds()">Refresh</button>
+        <button onclick="dropLocalStorage()">Delete all</button>
+      </div>
+    </main>
+
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/adsManager.js"></script>
+    <script>
+      showAds()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Add a new Advertisement</title>
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main class="content">
+      <h1>Add a new Advertisement</h1>
+
+      <form id="ads" onsubmit="addNewAds(event)">
+        <label for="adsName">Name:</label>
+        <input type="input" id="adsName" placeholder="Ads name" required />
+
+        <label for="client">Client name:</label>
+        <input type="input" id="client" placeholder="Client Name" required />
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" placeholder="Start Date" required />
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate"placeholder="End Date" required />
+
+        <label for="investmentPerDay">Investment per Day:</label>
+        <input type="number" inputmode="decimal" step="0.01" min="0" id="investmentPerDay" placeholder="Investment per Day" required />
+
+        <button type="submit">CREATE</button>
+      </form>
+
+      <a href="show_ads.html">Show all ads</a>
+    </main>
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/calculator.js"></script>
+    <script src="./assets/js/createAds.js"></script>
+  </body>
+</html>
