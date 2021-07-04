@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+  
+body {
+    margin: auto;
+    padding: auto;
+}
+  
+.content {
+    margin: auto;
+    width: 80%;
+    min-width: 300px;
+}
+  
+form {
+    width: 100%;
+}
+  
+form > * {
+    margin: 5px 0px;
+}
+  
+label {
+    display: block;
+    width: 80%;
+}
+  
+input {
+    display: block;
+    width: 80%;
+}
+  
+.checkbox * {
+    display: initial;
+    width: auto;
+}
+  
+table {
+    border-collapse: collapse;
+}
+  
+table, td, th {
+    border: 1px solid black;
+}
+  
+td, th {
+    padding: 5px;
+}
